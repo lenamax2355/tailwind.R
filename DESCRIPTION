@@ -1,0 +1,16 @@
+Package: tailwind.R
+Title: Tailwind CSS for R
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Troy James",
+           family = "Palanca",
+           role = c("aut", "cre"),
+           email = "mail@tjpalanca.com",
+           comment = c(ORCID = "0000-0002-0610-9213"))
+Description: Tailwind CSS is a utility-first CSS framework that can be used
+    to build any kind of design directly in the markup. This package allows
+    R users to build Tailwind CSS pages.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
