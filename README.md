@@ -4,6 +4,9 @@
 # Tailwind CSS for R
 
 <!-- badges: start -->
+
+[![Codecov test
+coverage](https://codecov.io/gh/tjpalanca/tailwind.R/branch/master/graph/badge.svg)](https://codecov.io/gh/tjpalanca/tailwind.R?branch=master)
 <!-- badges: end -->
 
 Tailwind CSS is a utility-first CSS framework that can be used to build
