@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# Tailwind CSS for R
+# Tailwind CSS for R <img src='man/figures/logo.png' align="right" height="139" />
 
 <!-- badges: start -->
 
