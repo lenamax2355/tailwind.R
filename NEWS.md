@@ -1,3 +1,3 @@
-# tailwind.R 0.0.0.9000
+# tailwind.R (development version)
 
-* Added a `NEWS.md` file to track changes to the package.
+* Tailwind CSS Proof of Concept with npm environment handling

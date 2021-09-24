@@ -6,6 +6,8 @@
 \alias{tailwind.R-package}
 \title{tailwind.R: Tailwind CSS for R}
 \description{
+\if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
+
 Tailwind CSS is a utility-first CSS framework that can be used
     to build any kind of design directly in the markup. This package allows
     R users to build Tailwind CSS pages.

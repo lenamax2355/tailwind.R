@@ -1,6 +1,6 @@
 Package: tailwind.R
 Title: Tailwind CSS for R
-Version: 0.0.0.9000
+Version: 0.0.0.9001
 Authors@R: 
     person(given = "Troy James",
            family = "Palanca",
@@ -28,4 +28,7 @@ Imports:
     readr,
     whisker,
     rlang,
-    checkmate
+    checkmate,
+    jsonlite,
+    magrittr,
+    snakecase

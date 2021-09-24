@@ -4,8 +4,10 @@ library(usethis)
 logo_location <- "inst/img/logo.png"
 
 sticker(
-  subplot =
-    grid::rasterGrob(png::readPNG("inst/img/tailwind.png"), interpolate = TRUE),
+  subplot = grid::rasterGrob(
+    png::readPNG("inst/img/tailwind.png"),
+    interpolate = TRUE
+  ),
   package  = "tailwind.R",
   filename = logo_location,
   p_size   = 20,

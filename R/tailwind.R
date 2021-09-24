@@ -1,27 +1,18 @@
-tailwind_install <- function(force = FALSE) {
-  if (!tailwind_installed() || force) {
-    npm_install(
-      "-D",
-      glue("tailwindcss@latest"),
-      glue("postcss@latest"),
-      glue("autoprefixer@latest")
-    )
-  }
-}
-
-tailwind_installed <- function() {
-  npm_installed(
-    "tailwindcss",
-    "postcss",
-    "autoprefixer"
-  )
-}
-
-tailwind <- function(content,
+#' @title Generate Tailwind CSS file
+#'
+#' @param config      ([`turbo_config()`]) instance governing this render
+#' @param output_file (path) to save the rendered css file
+#' @param input_file  (path) to an input CSS file. If NULL just renders the
+#'                           default CSS files with default directives.
+#' @param working_dir (path) get the working directory
+#'
+#' @export
+tailwind <- function(config      = tailwind_config(),
+                     input_file  = NULL,
                      output_file = "tailwind.css",
                      working_dir = getwd()) {
 
-  assert_character(content, min.len = 1L)
+  assert_class(config, "tailwind_config")
   assert_string(output_file)
 
   if (!tailwind_installed()) {
@@ -36,15 +27,13 @@ tailwind <- function(content,
   npm_template(
     pkg_inst("templates", "tailwind.config.js"),
     "tailwind.config.js",
-    content = paste0(
-      paste0("'", path_abs(path(working_dir, content)), "'"),
-      collapse = ",\n"
-    )
+    config = tailwind_json(config)
   )
 
-  npm_copy(
+  npm_template(
     pkg_inst("templates", "tailwind.css"),
-    "tailwind.css"
+    "tailwind.css",
+    extra = if (!is.null(input_file)) read_file(input_file)
   )
 
   npx_run(

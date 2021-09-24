@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# Tailwind CSS for R <img src='man/figures/logo.png' align="right" height="139" />
+# Tailwind for R <img src='man/figures/logo.png' align="right" height="139" />
 
 <!-- badges: start -->
 [![Codecov test coverage](https://codecov.io/gh/tjpalanca/tailwind.R/branch/master/graph/badge.svg)](https://codecov.io/gh/tjpalanca/tailwind.R?branch=master)
