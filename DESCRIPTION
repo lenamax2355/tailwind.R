@@ -1,6 +1,6 @@
 Package: tailwind.R
 Title: Tailwind CSS for R
-Version: 0.0.0.9001
+Version: 0.1.0
 Authors@R: 
     person(given = "Troy James",
            family = "Palanca",
@@ -35,5 +35,5 @@ Imports:
     here,
     htmltools,
     webtools (>= 0.9.0.9000)
-Remotes:  
+Remotes: 
     tjpalanca/webtools
