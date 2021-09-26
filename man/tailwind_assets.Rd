@@ -14,6 +14,12 @@ tailwind_assets(
 )
 }
 \arguments{
+\item{input}{(pth) path to the input css file with tailwind directives}
+
+\item{config}{(pth) path to the config js file that dictates rendering}
+
+\item{output}{(pth) path to the output css file that can be linked}
+
 \item{prod}{(flg) whether this inclusion is in production}
 
 \item{vers}{(flg) version of the tailwind dependency, defaults to the

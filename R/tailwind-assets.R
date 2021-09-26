@@ -4,6 +4,7 @@
 #' Include this in `{htmltools}` tags to include the rendered Tailwind CSS
 #' file in the current page so that it can be used.
 #'
+#' @inheritParams tailwind_build
 #' @param build (flg) whether to build the tailwind CSS file; default is FALSE
 #'                    if `prod == TRUE`, and TRUE if `prod == FALSE`
 #' @param prod  (flg) whether this inclusion is in production
@@ -27,7 +28,8 @@ tailwind_assets <- function(
                             prod   = prod)
 
   htmlDependency(
-    name    = if (prod) "tailwindcss" else paste0("tailwindcss-", Sys.time()),
+    name    = if (prod) "tailwindcss" else
+      paste0("tailwindcss-", format(Sys.time(), format = "%Y%m%d%H%M%S")),
     version = vers %||% pkg_vers(),
     src     = path_dir(output),
     stylesheet = path_file(output),

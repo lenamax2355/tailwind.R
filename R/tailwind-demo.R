@@ -1,3 +1,10 @@
+#' @title Tailwind Demonstration
+#'
+#' @description
+#' This is a demonstration of an app that is built using the Tailwind CSS
+#' JIT compiler.
+#'
+#' @export
 tailwind_demo <- function() {
 
   html_tags(
@@ -15,6 +22,13 @@ tailwind_demo <- function() {
       )
     )
   )
+
+}
+
+#' @rdname tailwind_demo
+tailwind_demo_browse <- function() {
+
+  htmltools::browsable(tailwind_demo())
 
 }
 
@@ -127,6 +141,5 @@ tailwind_demo_calendar_icon <- function(icon_text, selected = FALSE) {
       ))
     )
   }
-
 
 }

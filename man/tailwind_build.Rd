@@ -12,14 +12,13 @@ tailwind_build(
 )
 }
 \arguments{
-\item{input}{(pth) path to the input css file with tailwind directives,
-relative to project root}
+\item{input}{(pth) path to the input css file with tailwind directives}
+
+\item{config}{(pth) path to the config js file that dictates rendering}
 
 \item{output}{(pth) path to the output css file that can be linked}
 
 \item{prod}{(flg) to render production build vs development}
-
-\item{dir}{(pth) to directory where Tailwind was installed}
 }
 \description{
 Builds the Tailwind CSS file based on the configuration in \code{dir}. It's

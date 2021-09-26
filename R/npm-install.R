@@ -23,11 +23,14 @@ npm_install <- function(dir, pkgs, ...) {
 #' @describeIn npm_install List packages in a directory
 npm_list <- function(dir, pkgs, ...) {
 
-  try(npm_run(
-    args = c("list", pkgs),
-    dir = dir,
-    ...
-  ))
+  try(
+    npm_run(
+      args = c("list", pkgs),
+      dir = dir,
+      ...
+    ),
+    silent = TRUE
+  )
 
 }
 
@@ -38,7 +41,7 @@ npm_installed <- function(dir, pkgs, ...) {
   if (inherits(results, "try-error")) {
     FALSE
   } else {
-    strings <- paste0("(└|├)─(─|┬) ", pkgs, "@")
+    strings <- paste0("(\u2514|\u251c)\u2500(\u2500|\u252c) ", pkgs, "@")
     every(strings, grepl, x = results$stdout)
   }
 

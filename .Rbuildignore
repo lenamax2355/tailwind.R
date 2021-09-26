@@ -5,3 +5,4 @@
 ^_sandbox\.R$
 ^codecov\.yml$
 ^scripts$
+^\.github$

@@ -5,10 +5,9 @@
 #' recommended that you use JIT mode when running `tailwind_install()` to make
 #' this process faster.
 #'
-#' @param input  (pth) path to the input css file with tailwind directives,
-#'                     relative to project root
+#' @param input  (pth) path to the input css file with tailwind directives
+#' @param config (pth) path to the config js file that dictates rendering
 #' @param output (pth) path to the output css file that can be linked
-#' @param dir    (pth) to directory where Tailwind was installed
 #' @param prod   (flg) to render production build vs development
 #'
 #' @export

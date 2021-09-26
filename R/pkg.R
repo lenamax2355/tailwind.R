@@ -26,3 +26,8 @@ pkg_user <- function(...) {
   path(user_dir, ...)
 
 }
+
+globalVariables(
+  names(htmltools::tags),
+  package = pkg_name
+)

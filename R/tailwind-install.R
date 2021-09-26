@@ -26,10 +26,6 @@ tailwind_installed <- function() {
 
 }
 
-tailwind_dir <- function() {
-  pkg_user("tailwind")
-}
+tailwind_dir <- function() pkg_user("tailwind")
 
-tailwind_pkgs <- function() {
-  c("tailwindcss", "postcss", "autoprefixer")
-}
+tailwind_pkgs <- function() c("tailwindcss", "postcss", "autoprefixer")
