@@ -1,26 +1,44 @@
-npm_install <- function(..., args = list()) {
-  exec(
-    npm_run,
-    args = c("install", ...),
-    !!!args
+#' @title NPM installation utilities
+#'
+#' @inheritParams npm
+#' @param pkgs (arg) npm packages as character strings
+#' @param ...  (arg) extra arguments to pass to [`processx::run`]
+#'
+#' @name npm_install
+#' @family NPM Utilities
+NULL
+
+#' @describeIn npm_install Install packages
+npm_install <- function(dir, pkgs, ...) {
+
+  npm_run(
+    dir  = dir,
+    args = c("install", pkgs),
+    spinner = TRUE,
+    ...
   )
+
 }
 
-npm_list <- function(..., args = list()) {
-  try(exec(
-    npm_run,
-    args = c("list", ...),
-    !!!args
+#' @describeIn npm_install List packages in a directory
+npm_list <- function(dir, pkgs, ...) {
+
+  try(npm_run(
+    args = c("list", pkgs),
+    dir = dir,
+    ...
   ))
+
 }
 
-npm_installed <- function(..., args = list()) {
+#' @describeIn npm_install Checks whether certain npm packages are installed
+npm_installed <- function(dir, pkgs, ...) {
 
-  results <- npm_list(..., args = args)
+  results <- npm_list(dir, pkgs, ...)
   if (inherits(results, "try-error")) {
     FALSE
   } else {
-    strings <- paste0("(└|├)─(─|┬) ", c(...), "@")
+    strings <- paste0("(└|├)─(─|┬) ", pkgs, "@")
     every(strings, grepl, x = results$stdout)
   }
 

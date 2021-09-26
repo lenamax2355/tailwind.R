@@ -31,4 +31,7 @@ Imports:
     checkmate,
     jsonlite,
     magrittr,
-    snakecase
+    snakecase,
+    here,
+    htmltools,
+    webtools

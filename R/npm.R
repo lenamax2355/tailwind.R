@@ -1,47 +1,40 @@
-npm_run <- function(...) {
+#' @title
+#' NPM Utilities
+#'
+#' @description
+#' Utiltiies to deal with `npm` and its attached technologies.
+#'
+#' @param dir (dir) npm directory
+#' @param ... (arg) arguments to passed to [`processx::run`]
+#'
+#' @family NPM Utilities
+#' @name npm
+NULL
 
-  assert_true(Sys.which("npm") != "")
-  dir_create(pkg_user("npm"))
+#' @describeIn npm `npm run` helper
+#' @export
+npm_run <- function(dir, ...) {
+
   run(
     command = "npm",
     echo_cmd = TRUE,
     echo = TRUE,
     ...,
-    wd = pkg_user("npm")
+    wd = dir
   )
 
 }
 
-npx_run <- function(...) {
+#' @describeIn npm `npx run` helper
+#' @export
+npx_run <- function(dir, ...) {
 
-  assert_true(Sys.which("npx") != "")
-  dir_create(pkg_user("npm"))
   run(
     command = "npx",
     echo_cmd = TRUE,
     echo = TRUE,
     ...,
-    wd = pkg_user("npm")
-  )
-
-}
-
-npm_copy <- function(file, path, overwrite = TRUE) {
-
-  dir_create(pkg_user("npm"))
-  file_copy(file, pkg_user("npm", path), overwrite = overwrite)
-
-}
-
-npm_template <- function(file, path, ..., text = NULL) {
-
-  dir_create(pkg_user("npm"))
-  write_file(
-    whisker.render(
-      text %||% read_file(file),
-      data = list(...)
-    ),
-    pkg_user("npm", path)
+    wd = dir
   )
 
 }
