@@ -11,6 +11,7 @@
 #' @param jit_mode  (flg) enable TailwindCSS jit mode
 #' @param overwrite (flg) whether or not to overwrite
 #'
+#' @family Tailwind CSS
 #' @export
 tailwind_init <- function(dir = pkg_inst("tailwind"),
                           jit_mode  = TRUE,

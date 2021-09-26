@@ -19,3 +19,12 @@ the source directory within the project, while keeping the node machinery
 outside of the package. This initializes those configs so that you can
 run \code{tailwind_build()} easier.
 }
+\seealso{
+Other Tailwind CSS: 
+\code{\link{tailwind_assets}()},
+\code{\link{tailwind_build}()},
+\code{\link{tailwind_demo}()},
+\code{\link{tailwind_install}()},
+\code{\link{tailwind_run}()}
+}
+\concept{Tailwind CSS}

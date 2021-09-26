@@ -10,6 +10,7 @@
 #'
 #' Use `tailwind_installed()` to check a directory for an installation.
 #'
+#' @family Tailwind CSS
 #' @export
 tailwind_install <- function() {
 

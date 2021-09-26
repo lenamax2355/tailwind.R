@@ -4,6 +4,7 @@
 #' This is a demonstration of an app that is built using the Tailwind CSS
 #' JIT compiler.
 #'
+#' @family Tailwind CSS
 #' @export
 tailwind_demo <- function() {
 

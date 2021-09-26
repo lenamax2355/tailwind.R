@@ -10,6 +10,7 @@
 #' @param output (pth) path to the output css file that can be linked
 #' @param prod   (flg) to render production build vs development
 #'
+#' @family Tailwind CSS
 #' @export
 tailwind_build <- function(
   input  = pkg_inst("tailwind", "tailwind.css"),

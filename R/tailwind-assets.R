@@ -11,6 +11,7 @@
 #' @param vers  (flg) version of the tailwind dependency, defaults to the
 #'                    hash digest of the current time
 #'
+#' @family Tailwind CSS
 #' @export
 tailwind_assets <- function(
   input  = pkg_inst("tailwind", "tailwind.css"),

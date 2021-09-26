@@ -32,3 +32,12 @@ if \code{prod == TRUE}, and TRUE if \code{prod == FALSE}}
 Include this in \code{{htmltools}} tags to include the rendered Tailwind CSS
 file in the current page so that it can be used.
 }
+\seealso{
+Other Tailwind CSS: 
+\code{\link{tailwind_build}()},
+\code{\link{tailwind_demo}()},
+\code{\link{tailwind_init}()},
+\code{\link{tailwind_install}()},
+\code{\link{tailwind_run}()}
+}
+\concept{Tailwind CSS}

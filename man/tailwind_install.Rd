@@ -19,3 +19,12 @@ the tailwind files themselves and refer to the
 
 Use \code{tailwind_installed()} to check a directory for an installation.
 }
+\seealso{
+Other Tailwind CSS: 
+\code{\link{tailwind_assets}()},
+\code{\link{tailwind_build}()},
+\code{\link{tailwind_demo}()},
+\code{\link{tailwind_init}()},
+\code{\link{tailwind_run}()}
+}
+\concept{Tailwind CSS}

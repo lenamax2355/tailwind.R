@@ -36,4 +36,5 @@ Imports:
     htmltools,
     webtools (>= 0.9.0.9000)
 Remotes: 
-    tjpalanca/webtools
+    tjpalanca/webtools,
+    tmobile/loadtest

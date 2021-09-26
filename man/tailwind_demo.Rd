@@ -13,3 +13,12 @@ tailwind_demo_browse()
 This is a demonstration of an app that is built using the Tailwind CSS
 JIT compiler.
 }
+\seealso{
+Other Tailwind CSS: 
+\code{\link{tailwind_assets}()},
+\code{\link{tailwind_build}()},
+\code{\link{tailwind_init}()},
+\code{\link{tailwind_install}()},
+\code{\link{tailwind_run}()}
+}
+\concept{Tailwind CSS}

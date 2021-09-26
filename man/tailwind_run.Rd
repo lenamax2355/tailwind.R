@@ -13,3 +13,12 @@ tailwind_run(...)
 After \code{tailwind_install()}, you can run tailwind commands arbitrarily using
 \code{tailwind_run}.
 }
+\seealso{
+Other Tailwind CSS: 
+\code{\link{tailwind_assets}()},
+\code{\link{tailwind_build}()},
+\code{\link{tailwind_demo}()},
+\code{\link{tailwind_init}()},
+\code{\link{tailwind_install}()}
+}
+\concept{Tailwind CSS}

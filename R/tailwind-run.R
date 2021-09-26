@@ -6,6 +6,7 @@
 #'
 #' @param ... (arg) passed to [processx::run]
 #'
+#' @family Tailwind CSS
 #' @export
 tailwind_run <- function(...) {
 
