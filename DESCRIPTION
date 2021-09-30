@@ -8,10 +8,10 @@ Authors@R: c(
            email = "mail@tjpalanca.com",
            comment = c(ORCID = "0000-0002-0610-9213")),
     person("Adam Wathan", email = "adam.wathan@gmail.com",
-           role = c("aut", "cre"),
+           role = c("ctb", "cph"),
            comment = "Tailwind CSS (MIT License)"),
     person("Jonathan Reinink", email = "jonathan@reinink.ca",
-           role = c("aut", "cre"),
+           role = c("ctb", "cph"),
            comment = "Tailwind CSS (MIT License)")
     )
 Description: Tailwind CSS is a utility-first CSS framework that can be used
